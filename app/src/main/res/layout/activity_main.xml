@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="346dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/login_edit_pwd"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="137dp">
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="52dp"
+                android:background="#545bcb"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="52dp"
+                android:background="#e52525"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:background="#ffffff"
+            android:src="@drawable/stanford" />
+
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_edit_account"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:ems="10"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/login_edit_account"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:hint="请输入您的用户名"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_edit_pwd"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/Login_Remember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:checked="false"
+                android:text="记住账号"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/login_fail_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#f71818"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

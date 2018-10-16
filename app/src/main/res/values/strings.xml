@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GymClubNew</string>
+    <string name="login_label_username" />
+    <string name="login_username_hint" />
+    <string name="login_label_password" />
+    <string name="login_label_signin" />
+    <string name="login_register_link" />
+</resources>

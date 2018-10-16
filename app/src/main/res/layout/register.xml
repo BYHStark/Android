@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:id="@+id/username"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint="请输入您的用户名"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/userpwd"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint="请输入您的密码"
+        android:layout_below="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/userpwd1"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint="请确认您的密码"
+        android:layout_below="@+id/userpwd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:background="#e52525"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</LinearLayout>
